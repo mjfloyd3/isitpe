@@ -97,14 +97,9 @@ main { padding-bottom: 64px; }
 .card {
   background: var(--surface);
   border: 1px solid var(--border);
-  border-left: 6px solid var(--neutral);
   border-radius: 12px;
   padding: 22px 24px;
 }
-.card.pe_controlled { border-left-color: var(--pe); }
-.card.pe_backed { border-left-color: var(--backed); }
-.card.vc_backed { border-left-color: var(--vc); }
-.card.unknown { border-left-color: var(--border); }
 
 .card p { margin: 0; }
 .name { color: var(--muted); }
