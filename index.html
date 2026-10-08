@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Is It PE?</title>
+  <meta name="description" content="Check whether an NYC restaurant or food business is owned by private equity, and find independent places to support instead.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>Is it <span class="accent">PE</span>?</h1>
+    <p class="tagline">Find out who really owns the places you eat in New York City, so you can put your money behind independent businesses.</p>
+  </header>
+
+  <main>
+    <form id="search-form" class="search" role="search" autocomplete="off">
+      <label for="q" class="visually-hidden">Restaurant or business name</label>
+      <input id="q" name="q" type="search" placeholder="Try “Levain”, “Dunkin”, “Joe and the Juice”…" autofocus>
+      <button type="submit">Check</button>
+      <ul id="suggestions" class="suggestions" role="listbox" hidden></ul>
+    </form>
+
+    <section id="result" aria-live="polite"></section>
+
+    <section class="browse">
+      <div class="browse-head">
+        <h2>Browse the list</h2>
+        <div id="filters" class="filters" role="group" aria-label="Filter by ownership"></div>
+      </div>
+      <ul id="brand-list" class="brand-list"></ul>
+    </section>
+
+    <section class="about">
+      <h2>What the labels mean</h2>
+      <dl id="legend" class="legend"></dl>
+      <h2>About this data</h2>
+      <p>Every entry is compiled from public reporting and links to its sources. Ownership changes often, and we may get things wrong. If you see an error or know of a place we're missing, <a href="https://github.com/" id="report-link">let us know</a>.</p>
+      <p><strong>No result doesn't mean independent.</strong> A place that isn't listed simply hasn't been researched yet.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Eat local. Ask who owns it.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
