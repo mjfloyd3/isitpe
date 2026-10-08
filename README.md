@@ -13,5 +13,3 @@ python3 -m http.server 8000
 ## Data
 
 `data/brands.csv` has one row per brand. `status` must be one of `pe_controlled`, `pe_backed`, `vc_backed`, `other_owner`, `public`. Multi-value fields (`owners`, `aliases`, `same_owner_also_owns`) are separated by `; `. Add common misspellings to `aliases` so search finds them.
-
-Set `REPORT_URL` at the top of `app.js` to a form or email link for corrections and suggestions.
